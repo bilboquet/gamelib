@@ -1,0 +1,14 @@
+graph G {
+//   subgraph cluster_0 {
+//     style=filled;
+//     color=lightgrey;
+//     node [style=filled,color=white];
+    a -- b -- c -- d -- e;
+    b -- f;
+    c -- f;
+    d -- f;
+//   }
+}
+
+
+// dot fusion_origin.dot -Kcirco -Tpng -o fusion_origin.png

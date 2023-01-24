@@ -1,0 +1,61 @@
+digraph {
+  labelloc=b;
+
+  1 -> 11;
+  1 -> 12;
+
+  11 -> 111;
+  11 -> 112;
+  12 -> 121;
+
+  111 -> 1111;
+  111 -> 1112;
+  112 -> 1121;
+  112 -> 1122;
+  121 -> 1211;
+
+  1111 -> 11111;
+  1111 -> 11112;
+  1111 -> 11113;
+  1112 -> 11121;
+  1112 -> 11122;
+  1122 -> 11221;
+  1122 -> 11222;
+  1211 -> 12111;
+  1211 -> 12112;
+
+  11111 -> 111111;
+  11112 -> 111121;
+  11122 -> 111221;
+  12111 -> 121111;
+  12112 -> 121121;
+
+
+  1 [label="", shape="plaintext", image="1.dot.png"];
+  11 [label="", shape="plaintext", image="11.dot.png"];
+  111 [label="", shape="plaintext", image="111.dot.png"];
+  1111 [label="", shape="plaintext", image="1111.dot.png"];
+  11111 [label="", shape="plaintext", image="11111.dot.png"];
+  111111 [label="", shape="plaintext", image="111111.dot.png"];
+  11112 [label="", shape="plaintext", image="11112.dot.png"];
+  111121 [label="", shape="plaintext", image="111121.dot.png"];
+  11113 [label="", shape="plaintext", image="11113.dot.png"];
+  1112 [label="", shape="plaintext", image="1112.dot.png"];
+  11121 [label="", shape="plaintext", image="11121X.dot.png"];
+  11122 [label="", shape="plaintext", image="11122.dot.png"];
+  111221 [label="", shape="plaintext", image="111221.dot.png"];
+  112 [label="", shape="plaintext", image="112.dot.png"];
+  1121 [label="", shape="plaintext", image="1121.dot.png"];
+  1122 [label="", shape="plaintext", image="1122.dot.png"];
+  11221 [label="", shape="plaintext", image="11221X.dot.png"];
+  11222 [label="", shape="plaintext", image="11222X.dot.png"];
+  12 [label="", shape="plaintext", image="12.dot.png"];
+  121 [label="", shape="plaintext", image="121.dot.png"];
+  1211 [label="", shape="plaintext", image="1211.dot.png"];
+  12111 [label="", shape="plaintext", image="12111.dot.png"];
+  121111 [label="", shape="plaintext", image="121111.dot.png"];
+  12112 [label="", shape="plaintext", image="12112.dot.png"];
+  121121 [label="", shape="plaintext", image="121121.dot.png"];
+
+  #11113 -> 11121;
+}

@@ -1,0 +1,8 @@
+graph G {
+    a -- "F(bcf)" -- d -- e;
+    "F(bcf)" -- d;
+    
+    color=blue
+  }
+  
+  // dot fusion_processed.dot -Kcirco -Tpng -o fusion_processed.png

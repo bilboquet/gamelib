@@ -1,0 +1,44 @@
+graph G {
+
+  subgraph cluster_0 {
+    
+    a -- b -- c -- d -- e -- f -- a;
+    b -- f;
+    
+    d -- e;
+    
+    //{rank = same; a4, a5 }
+    //{rank = same; a1, a5 }
+
+  }
+
+  subgraph cluster_1 {
+    a2 -- "F(bf)";
+    a2 -- "F(bf)" -- c2 -- d2;
+    "F(bf)" -- e2;
+
+    d2 -- e2;
+    d2 -- e2;
+    
+  }
+  
+  subgraph cluster_1 {
+    a3 -- "F(bfe)";
+    a3 -- "F(bfe)" -- c3 -- d3;
+    
+
+    d3 -- "F(bfe)";
+    d3 -- "F(bfe)";
+    
+  }
+  
+  subgraph cluster_1 {
+    a4 -- "F(bfed)";
+    a4 -- "F(bfed)" -- c4;
+    "F(bfed)" -- c4;
+
+
+  }
+
+    
+}
