@@ -1,61 +1,124 @@
 digraph {
-  labelloc=b;
+  labelloc="b";
+  1 -> {
+    11;
+    12;
 
-  1 -> 11;
-  1 -> 12;
+  };
+  11 -> {
+    111;
+    112;
+    113;
 
-  11 -> 111;
-  11 -> 112;
-  12 -> 121;
+  };
+  12 -> {
+    121;
+    122;
 
-  111 -> 1111;
-  111 -> 1112;
-  112 -> 1121;
-  112 -> 1122;
-  121 -> 1211;
+  };
+  111 -> {
+    1111;
+    1112;
 
-  1111 -> 11111;
-  1111 -> 11112;
-  1111 -> 11113;
+  };
+  112 -> {
+    1121;
+    1122;
+    1123;
+
+  };
+  113 -> {
+    1131;
+    1132;
+    1133;
+
+  };
+
+  {
+    113 -> 121;
+    113 -> 121;
+    rank="same";
+    113;
+    121;
+
+  }
+
+  122 -> 1221;
+  1111 -> {
+    11111;
+    11112;
+    11113;
+
+  };
   1112 -> 11121;
   1112 -> 11122;
   1122 -> 11221;
   1122 -> 11222;
-  1211 -> 12111;
-  1211 -> 12112;
+  1123 -> {
+    11231;
+    11232;
+
+  };
+  1221 -> 12211;
+  1221 -> 12212;
+  1133 -> {
+    11331;
+
+  };
+
+  {
+    1121 -> 1112;
+    1112 -> 1121;
+    rank="same";
+    1112;
+    1121;
+
+  }
 
   11111 -> 111111;
   11112 -> 111121;
   11122 -> 111221;
-  12111 -> 121111;
-  12112 -> 121121;
+  11231 -> 112311;
+  11231 -> 112312;
+  11331 -> 113311;
+  12211 -> 122111;
+  12212 -> 122121;
+  1 [label="", shape="plaintext", image="1.png"];
+  11 [label="", shape="plaintext", image="11.png"];
+  111 [label="", shape="plaintext", image="111.png"];
+  1111 [label="", shape="plaintext", image="1111.png"];
+  11111 [label="", shape="plaintext", image="11111.png"];
+  111111 [label="", shape="plaintext", image="111111.png"];
+  11112 [label="", shape="plaintext", image="11112.png"];
+  111121 [label="", shape="plaintext", image="111121.png"];
+  11113 [label="", shape="plaintext", image="11113.png"];
+  1112 [label="", shape="plaintext", image="1112.png"];
+  11121 [label="", shape="plaintext", image="11121X.png"];
+  11122 [label="", shape="plaintext", image="11122.png"];
+  111221 [label="", shape="plaintext", image="111221.png"];
+  112 [label="", shape="plaintext", image="112.png"];
+  113 [label="", shape="plaintext", image="113.png"];
+  1131 [label="", shape="plaintext", image="1131.png"];
+  1132 [label="", shape="plaintext", image="1132.png"];
+  1133 [label="", shape="plaintext", image="1133.png"];
+  11331 [label="", shape="plaintext", image="11331.png"];
+  113311 [label="", shape="plaintext", image="113311.png"];
+  1121 [label="", shape="plaintext", image="1121.png"];
+  1122 [label="", shape="plaintext", image="1122.png"];
+  11221 [label="", shape="plaintext", image="11221X.png"];
+  11222 [label="", shape="plaintext", image="11222X.png"];
+  1123 [label="", shape="plaintext", image="1123.png"];
+  11231 [label="", shape="plaintext", image="11231.png"];
+  11232 [label="", shape="plaintext", image="11232.png"];
+  112311 [label="", shape="plaintext", image="112311.png"];
+  112312 [label="", shape="plaintext", image="112312.png"];
+  12 [label="", shape="plaintext", image="12.png"];
+  121 [label="", shape="plaintext", image="121.png"];
+  122 [label="", shape="plaintext", image="122.png"];
+  1221 [label="", shape="plaintext", image="1221.png"];
+  12211 [label="", shape="plaintext", image="12211.png"];
+  122111 [label="", shape="plaintext", image="122111.png"];
+  12212 [label="", shape="plaintext", image="12212.png"];
+  122121 [label="", shape="plaintext", image="122121.png"];
 
-
-  1 [label="", shape="plaintext", image="1.dot.png"];
-  11 [label="", shape="plaintext", image="11.dot.png"];
-  111 [label="", shape="plaintext", image="111.dot.png"];
-  1111 [label="", shape="plaintext", image="1111.dot.png"];
-  11111 [label="", shape="plaintext", image="11111.dot.png"];
-  111111 [label="", shape="plaintext", image="111111.dot.png"];
-  11112 [label="", shape="plaintext", image="11112.dot.png"];
-  111121 [label="", shape="plaintext", image="111121.dot.png"];
-  11113 [label="", shape="plaintext", image="11113.dot.png"];
-  1112 [label="", shape="plaintext", image="1112.dot.png"];
-  11121 [label="", shape="plaintext", image="11121X.dot.png"];
-  11122 [label="", shape="plaintext", image="11122.dot.png"];
-  111221 [label="", shape="plaintext", image="111221.dot.png"];
-  112 [label="", shape="plaintext", image="112.dot.png"];
-  1121 [label="", shape="plaintext", image="1121.dot.png"];
-  1122 [label="", shape="plaintext", image="1122.dot.png"];
-  11221 [label="", shape="plaintext", image="11221X.dot.png"];
-  11222 [label="", shape="plaintext", image="11222X.dot.png"];
-  12 [label="", shape="plaintext", image="12.dot.png"];
-  121 [label="", shape="plaintext", image="121.dot.png"];
-  1211 [label="", shape="plaintext", image="1211.dot.png"];
-  12111 [label="", shape="plaintext", image="12111.dot.png"];
-  121111 [label="", shape="plaintext", image="121111.dot.png"];
-  12112 [label="", shape="plaintext", image="12112.dot.png"];
-  121121 [label="", shape="plaintext", image="121121.dot.png"];
-
-  #11113 -> 11121;
 }

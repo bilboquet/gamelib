@@ -6,6 +6,7 @@ graph {
   1 -- 5 -- 2;
   6 -- 2;
   5 -- 6;
+  2 -- 4 [weight=2, style="invis"];
 
   {
     rank="same";
