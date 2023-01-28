@@ -63,6 +63,12 @@ digraph {
   1122 -> 11222;
   1221 -> 12211;
   1221 -> 12212;
+  1131 -> {
+    11311;
+    11312;
+    11313;
+
+  };
   1133 -> {
     11331;
 
@@ -84,6 +90,9 @@ digraph {
   11111 -> 111111;
   11112 -> 111121;
   11122 -> 111221;
+  11311 -> 113111;
+  11312 -> 113121;
+  11313 -> 113131;
   11331 -> 113311;
   12212 -> 122121;
   12231 -> 122311;
@@ -119,6 +128,10 @@ digraph {
   112 [label="", shape="plaintext", image="112.png"];
   113 [label="", shape="plaintext", image="113.png"];
   1131 [label="", shape="plaintext", image="1131.png"];
+  11311 [label="", shape="plaintext", image="11311.png"];
+  11312 [label="", shape="plaintext", image="11312.png"];
+  11313 [label="", shape="plaintext", image="11313.png"];
+  113131 [label="", shape="plaintext", image="113131.png"];
   1132 [label="", shape="plaintext", image="1132.png"];
   1133 [label="", shape="plaintext", image="1133.png"];
   11331 [label="", shape="plaintext", image="11331.png"];
