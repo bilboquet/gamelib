@@ -24,7 +24,6 @@ digraph {
   112 -> {
     1121;
     1122;
-    1123;
 
   };
   113 -> {
@@ -43,7 +42,12 @@ digraph {
 
   }
 
-  122 -> 1221;
+  122 -> {
+    1221;
+    1222;
+    1223;
+
+  };
   1111 -> {
     11111;
     11112;
@@ -54,17 +58,14 @@ digraph {
   1112 -> 11122;
   1122 -> 11221;
   1122 -> 11222;
-  1123 -> {
-    11231;
-    11232;
-
-  };
   1221 -> 12211;
   1221 -> 12212;
   1133 -> {
     11331;
 
   };
+  1222 -> 12221;
+  1223 -> {12231 12232};
 
   {
     1121 -> 1112;
@@ -78,11 +79,19 @@ digraph {
   11111 -> 111111;
   11112 -> 111121;
   11122 -> 111221;
-  11231 -> 112311;
-  11231 -> 112312;
   11331 -> 113311;
-  12211 -> 122111;
   12212 -> 122121;
+  12231 -> 122311;
+
+  {
+    11331 -> 12211;
+    12211 -> 11331;
+    rank="same";
+    11331;
+    12211;
+
+  }
+
   1 [label="", shape="plaintext", image="1.png"];
   11 [label="", shape="plaintext", image="11.png"];
   111 [label="", shape="plaintext", image="111.png"];
@@ -107,17 +116,17 @@ digraph {
   1122 [label="", shape="plaintext", image="1122.png"];
   11221 [label="", shape="plaintext", image="11221X.png"];
   11222 [label="", shape="plaintext", image="11222X.png"];
-  1123 [label="", shape="plaintext", image="1123.png"];
-  11231 [label="", shape="plaintext", image="11231.png"];
-  11232 [label="", shape="plaintext", image="11232.png"];
-  112311 [label="", shape="plaintext", image="112311.png"];
-  112312 [label="", shape="plaintext", image="112312.png"];
   12 [label="", shape="plaintext", image="12.png"];
   121 [label="", shape="plaintext", image="121.png"];
   122 [label="", shape="plaintext", image="122.png"];
   1221 [label="", shape="plaintext", image="1221.png"];
+  1222 [label="", shape="plaintext", image="1222.png"];
+  1223 [label="", shape="plaintext", image="1223.png"];
+  12231 [label="", shape="plaintext", image="12231.png"];
+  122311 [label="", shape="plaintext", image="122311.png"];
+  12232 [label="", shape="plaintext", image="12232.png"];
+  12221 [label="", shape="plaintext", image="12221.png"];
   12211 [label="", shape="plaintext", image="12211.png"];
-  122111 [label="", shape="plaintext", image="122111.png"];
   12212 [label="", shape="plaintext", image="12212.png"];
   122121 [label="", shape="plaintext", image="122121.png"];
 
