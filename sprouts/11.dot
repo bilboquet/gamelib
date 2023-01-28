@@ -1,4 +1,5 @@
 graph {
+  rankdir="LR";
   1 -- 3 -- 2;
   3 [color="blue"];
 

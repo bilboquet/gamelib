@@ -12,18 +12,20 @@ digraph {
 
   };
   12 -> {
-    121;
+    113;
     122;
     123;
+    124;
 
   };
   111 -> {
     1111;
     1112;
+    1131;
 
   };
   112 -> {
-    1121;
+    1112;
     1122;
 
   };
@@ -34,23 +36,18 @@ digraph {
 
   };
   123 -> {
-    1231;
+    1224;
 
   };
-
-  {
-    113 -> 121;
-    113 -> 121;
-    rank="same";
-    113;
-    121;
-
-  }
-
   122 -> {
     1221;
     1223;
     1224;
+
+  };
+  124 -> {
+    1223;
+    1241;
 
   };
   1111 -> {
@@ -60,24 +57,23 @@ digraph {
 
   };
   1112 -> {
-    11121;
+    11113;
     11122;
 
   };
   1122 -> 11221;
   1122 -> 11222;
-  1221 -> 12211;
+  1221 -> 11331;
   1221 -> 12212;
   1131 -> {
     11311;
     11312;
-    11313;
 
   };
   1132 -> {
     11321;
-    11322;
-    11323;
+    11311;
+    11312;
 
   };
   1133 -> {
@@ -87,43 +83,30 @@ digraph {
   1223 -> {
     12231;
     12232;
+    12234;
 
   };
   1224 -> 12241;
+  1241 -> {
+    12234;
+    12412;
 
-  {
-    1121 -> 1112;
-    1112 -> 1121;
-    rank="same";
-
-  }
-
+  };
   11111 -> 111111;
   11112 -> 111121;
   11122 -> 111221;
-  11311 -> 113111;
+  11311 -> {113111 113112};
   11312 -> 113121;
-  11313 -> 113131;
   11321 -> 113211;
   11331 -> 113311;
   12212 -> 122121;
   12231 -> 122311;
+  12234 -> 122341;
+  12412 -> {
+    124121;
+    124122;
 
-  {
-    11113 -> 11121;
-    11121 -> 11113;
-    rank="same";
-
-  }
-
-
-  {
-    11331 -> 12211;
-    12211 -> 11331;
-    rank="same";
-
-  }
-
+  };
   1 [label="", shape="plaintext", image="1.png"];
   11 [label="", shape="plaintext", image="11.png"];
   111 [label="", shape="plaintext", image="111.png"];
@@ -134,11 +117,9 @@ digraph {
   111121 [label="", shape="plaintext", image="111121.png"];
   11113 [label="", shape="plaintext", image="11113.png"];
   1112 [label="", shape="plaintext", image="1112.png"];
-  11121 [label="", shape="plaintext", image="11121.png"];
   11122 [label="", shape="plaintext", image="11122.png"];
   111221 [label="", shape="plaintext", image="111221.png"];
   112 [label="", shape="plaintext", image="112.png"];
-  1121 [label="", shape="plaintext", image="1121.png"];
   1122 [label="", shape="plaintext", image="1122.png"];
   11221 [label="", shape="plaintext", image="11221X.png"];
   11222 [label="", shape="plaintext", image="11222X.png"];
@@ -148,8 +129,6 @@ digraph {
   113111 [label="", shape="plaintext", image="113111.png"];
   11312 [label="", shape="plaintext", image="11312.png"];
   113121 [label="", shape="plaintext", image="113121.png"];
-  11313 [label="", shape="plaintext", image="11313.png"];
-  113131 [label="", shape="plaintext", image="113131.png"];
   1132 [label="", shape="plaintext", image="1132.png"];
   11321 [label="", shape="plaintext", image="11321.png"];
   113211 [label="", shape="plaintext", image="113211.png"];
@@ -157,10 +136,8 @@ digraph {
   11331 [label="", shape="plaintext", image="11331.png"];
   113311 [label="", shape="plaintext", image="113311.png"];
   12 [label="", shape="plaintext", image="12.png"];
-  121 [label="", shape="plaintext", image="121.png"];
   122 [label="", shape="plaintext", image="122.png"];
   1221 [label="", shape="plaintext", image="1221.png"];
-  12211 [label="", shape="plaintext", image="12211.png"];
   12212 [label="", shape="plaintext", image="12212.png"];
   122121 [label="", shape="plaintext", image="122121.png"];
   1224 [label="", shape="plaintext", image="1224.png"];
@@ -170,6 +147,13 @@ digraph {
   122311 [label="", shape="plaintext", image="122311.png"];
   12232 [label="", shape="plaintext", image="12232.png"];
   123 [label="", shape="plaintext", image="123.png"];
-  1231 [label="", shape="plaintext", image="1231.png"];
+  124 [label="", shape="plaintext", image="124.png"];
+  1241 [label="", shape="plaintext", image="1241.png"];
+  12412 [label="", shape="plaintext", image="12412.png"];
+  124121 [label="", shape="plaintext", image="124121.png"];
+  12234 [label="", shape="plaintext", image="12234.png"];
+  122341 [label="", shape="plaintext", image="122341.png"];
+  124122 [label="", shape="plaintext", image="124122.png"];
+  113112 [label="", shape="plaintext", image="113112.png"];
 
 }
