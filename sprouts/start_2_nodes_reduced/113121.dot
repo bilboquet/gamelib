@@ -1,0 +1,36 @@
+graph {
+  3 -- 1;
+  1 -- 6 [weight=4];
+  1 -- 5;
+  3 -- 2 [weight=3];
+  2 -- 4;
+  2 -- 4;
+  5 -- 3;
+  6 -- 4 [weight=4];
+  6 -- 7;
+  5 -- 7;
+
+  {
+    rank="same";
+    3;
+    1;
+
+  }
+
+
+  {
+    rank="sink";
+    2;
+    4;
+
+  }
+
+  1 [color="red"];
+  2 [color="red"];
+  3 [color="red"];
+  4 [color="red"];
+  5 [color="red"];
+  6 [color="red"];
+  7 [color="blue"];
+
+}
