@@ -1,40 +1,13 @@
 graph {
-  rankdir="LR";
-  1 -- 3;
-  1 -- 3;
-  1 -- 5;
-  5 -- 3;
-  2 -- 6 -- 4;
-  2 -- 4 -- 2;
+  13 -- 13;
+  13 -- 5;
+  5 -- 13;
+  24 -- 6 -- 24;
+  24 -- 24;
   5 -- 6 [style="invis"];
-
-  {
-    rank="same";
-    1;
-    2;
-
-  }
-
-
-  {
-    rank="same";
-    3;
-    4;
-
-  }
-
-
-  {
-    rank="same";
-    5;
-    6;
-
-  }
-
-  1 [color="red"];
-  2 [color="red"];
-  3 [color="red"];
-  4 [color="red"];
+  13 [color="red"];
+  24 [color="red"];
+  13 [color="red"];
+  24 [color="red"];
   6 [color="blue"];
-
 }
