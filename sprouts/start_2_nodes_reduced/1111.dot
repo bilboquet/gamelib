@@ -1,18 +1,14 @@
 graph {
-  1 -- 5 -- 2;
-  1 -- 4 -- 3;
-  1 -- 3 -- 2;
-
+  13 -- 5 -- 2;
+  13 -- 4 -- 13;
+  13 -- 2;
+  5 -- 4 [style="invis"];
+  2 -- 4 [style="invis"];
   {
-    rank="same";
-    3;
-    4;
+    rank="sink";
+    2;
     5;
-
   }
-
-  1 [color="red"];
-  3 [color="red"];
+  13 [color="red"];
   5 [color="blue"];
-
 }

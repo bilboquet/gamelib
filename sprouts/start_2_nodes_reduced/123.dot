@@ -1,18 +1,15 @@
 graph {
-  1 -- 3 [headport="ne", tailport="se"];
-  1 -- 3 [headport="no", tailport="so"];
-  1 -- 4;
-  4 -- 3;
-
+  13 -- 3 [tailport="se", headclip="false"];
+  13 -- 3 [tailport="sw", headclip="false"];
+  13 -- 4 [];
+  13 -- 4;
+  4 -- 3 [style="invis"];
   {
     rank="same";
     4;
     2;
-
   }
-
-  1 [color="red"];
-  3 [color="red"];
+  13 [color="red"];
+  3 [style="invis"];
   4 [color="blue"];
-
 }

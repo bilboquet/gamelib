@@ -1,30 +1,13 @@
 graph {
-  1 -- 4 -- 3 -- 2;
-  1 -- 3 [minlen=3];
-  1 -- 5;
-  5 -- 2 [minlen=3];
-  5 -- 6 -- 2;
-  4 -- 6 [weight=2, style="invis"];
-
+  1235:w -- 7 [headclip="false"];
+  7 -- 1235:e [tailclip="false"];
+  1235 -- 4 -- 1235;
+  1235 -- 6 -- 1235;
   {
-    rank="same";
-    1;
-    3;
-
+    rank="sink";
+    7;
   }
-
-
-  {
-    rank="same";
-    2;
-    5;
-
-  }
-
-  1 [color="red"];
-  2 [color="red"];
-  3 [color="red"];
-  5 [color="red"];
+  7 [style="invis"];
+  1235 [color="red"];
   6 [color="blue"];
-
 }
