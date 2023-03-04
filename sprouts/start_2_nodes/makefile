@@ -10,13 +10,13 @@ all: $(SVGFILES) $(PNGFILES) master.svg master.png
 	dot -Tsvg -Nshape=$(NODE_SHAPE) -Nwidth=".3" $< -o $@
 
 %.png: %.dot
-	dot -Tpng -Nshape=$(NODE_SHAPE) -Nwidth=".3" -Glabel=$(basename $<) -Glabelloc=b $< -o $@
+	dot -Tpng -Gdpi=300 -Nshape=$(NODE_SHAPE) -Nwidth=".3" -Glabel=$(basename $<) -Glabelloc=b $< -o $@
 
 master.svg: master.dot $(SVGFILES)
 	dot -Tsvg -Nshape=$(NODE_SHAPE) -Nwidth=".3" -Glabel=$(basename $<) -Glabelloc=b $< -o $@
 
 master.png: master.dot $(PNGFILES)
-	dot -Tpng -Nshape=$(NODE_SHAPE) -Nwidth=".3" -Glabel=$(basename $<) -Glabelloc=b $< -o $@
+	dot -Tpng -Gdpi=300 -Nshape=$(NODE_SHAPE) -Nwidth=".3" -Glabel=$(basename $<) -Glabelloc=b $< -o $@
 
 point:
 	NODE_SHAPE=point make clean all
