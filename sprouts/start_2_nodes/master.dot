@@ -20,6 +20,7 @@ digraph {
       1112;
       1131;
       1113;
+      1114;
     };
   112 -> {
       1112;
@@ -56,13 +57,14 @@ digraph {
       11131;
       11132;
     };
-  1122 -> 11221;
+  1114 -> 11141;
   1122 -> 11222;
   1221 -> 11331;
   1221 -> 12212;
   1131 -> {
       11311;
       11312;
+      11141;
     };
   1132 -> {
       11321;
@@ -71,13 +73,17 @@ digraph {
     };
   1133 -> {
       11331;
+      11332;
     };
   1223 -> {
       12231;
       12232;
       12234;
     };
-  1224 -> 12241;
+  1224 -> {
+      12241;
+      12232;
+    };
   1241 -> {
       12234;
       12412;
@@ -87,11 +93,14 @@ digraph {
   11122 -> 111221;
   11311 -> {
       113111;
-      113112;
     };
   11312 -> 113121;
   11321 -> 113211;
   11331 -> 113311;
+  11332 -> {
+      113321;
+      113322;
+    };
   12212 -> 122121;
   12231 -> 122311;
   12234 -> 122341;
@@ -109,6 +118,8 @@ digraph {
   111 [label="", shape="plaintext", image="111.png"];
   1111 [label="", shape="plaintext", image="1111.png"];
   1113 [label="", shape="plaintext", image="1113.png"];
+  1114 [label="", shape="plaintext", image="1114.png"];
+  11141 [label="", shape="plaintext", image="11141.png"];
   11131 [label="", shape="plaintext", image="11131.png"];
   11132 [label="", shape="plaintext", image="11132.png"];
   111321 [label="", shape="plaintext", image="111321.png"];
@@ -124,7 +135,6 @@ digraph {
   111221 [label="", shape="plaintext", image="111221.png"];
   112 [label="", shape="plaintext", image="112.png"];
   1122 [label="", shape="plaintext", image="1122.png"];
-  11221 [label="", shape="plaintext", image="11221X.png"];
   11222 [label="", shape="plaintext", image="11222X.png"];
   113 [label="", shape="plaintext", image="113.png"];
   1131 [label="", shape="plaintext", image="1131.png"];
@@ -136,6 +146,9 @@ digraph {
   11321 [label="", shape="plaintext", image="11321.png"];
   113211 [label="", shape="plaintext", image="113211.png"];
   1133 [label="", shape="plaintext", image="1133.png"];
+  11332 [label="", shape="plaintext", image="11332.png"];
+  113321 [label="", shape="plaintext", image="113321.png"];
+  113322 [label="", shape="plaintext", image="113322.png"];
   11331 [label="", shape="plaintext", image="11331.png"];
   113311 [label="", shape="plaintext", image="113311.png"];
   12 [label="", shape="plaintext", image="12.png"];
@@ -157,5 +170,4 @@ digraph {
   12234 [label="", shape="plaintext", image="12234.png"];
   122341 [label="", shape="plaintext", image="122341.png"];
   124122 [label="", shape="plaintext", image="124122.png"];
-  113112 [label="", shape="plaintext", image="113112.png"];
 }
